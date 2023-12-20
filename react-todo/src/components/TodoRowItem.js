@@ -1,9 +1,9 @@
-function TodoRowItem(params) {
+function TodoRowItem(props) {
   return (
     <tr>
-      <th scopre="row">1</th>
-      <td>Learn react fundamentals</td>
-      <td>bel-dono</td>
+      <th scopre="row">{props.rowNumber}</th>
+      <td>{props.rowDescription}</td>
+      <td>{props.rowAssigned}</td>
     </tr>
   );
 }
