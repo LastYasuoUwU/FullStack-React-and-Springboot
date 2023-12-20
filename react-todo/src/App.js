@@ -4,6 +4,7 @@ import TodoTable from "./components/TodoTable";
 import NewTodoForm from "./components/NewTodoForm";
 
 function App() {
+  const [showAddToForm, setShowAddToFrom] = useState(false);
   const [todos, setTodos] = useState([
     {
       rowNumber: 1,
@@ -55,10 +56,13 @@ function App() {
         <div className="card-header">Your Todo's</div>
         <div className="card-body">
           <TodoTable todos={todos} deleteTodo={deleteTodo} />
-          <button className="btn btn-primary" >
-            Add new todo
+          <button
+            className="btn btn-primary"
+            onClick={() => setShowAddToFrom(!showAddToForm)}
+          >
+            {showAddToForm ? "Close New Todo" : "New Todo"}
           </button>
-          <NewTodoForm addTodo={addTodo} />
+          {showAddToForm && <NewTodoForm addTodo={addTodo} />}
         </div>
       </div>
     </div>
