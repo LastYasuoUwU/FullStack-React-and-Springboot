@@ -11,7 +11,7 @@ function App() {
     {
       rowNumber: 2,
       rowDescription: "Play games",
-      rowAssigned: "bel-dono",
+      rowAssigned: "Hasafeed",
     },
     {
       rowNumber: 3,
