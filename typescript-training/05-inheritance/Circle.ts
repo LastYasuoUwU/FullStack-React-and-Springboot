@@ -15,7 +15,7 @@ export class Circle extends Shape {
   getInfo(): string {
     return (
       super.getInfo() +
-      `, and from the circle class the value of _radius: ${this._radius}\n`
+      `and from the circle class the value of _radius: ${this._radius}\n`
     );
   }
 }

@@ -15,7 +15,7 @@ class Circle extends Shape_1.Shape {
     }
     getInfo() {
         return (super.getInfo() +
-            `, and from the circle class the value of _radius: ${this._radius}\n`);
+            `and from the circle class the value of _radius: ${this._radius}\n`);
     }
 }
 exports.Circle = Circle;
