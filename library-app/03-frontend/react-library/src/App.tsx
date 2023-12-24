@@ -1,10 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Navbar } from "./layouts/NavBarAndFooter/Navbar";
+import { ExploreTopBooks } from "./layouts/HomePage/ExploreTopBooks";
+import { Carousel } from "./layouts/HomePage/Carousel";
+import { Heros } from "./layouts/HomePage/Heros";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to the fullstack course :-D</h1>
+    <div>
+      <Navbar />
+      <ExploreTopBooks />
+      <Carousel />
+      <Heros />
     </div>
   );
 }
