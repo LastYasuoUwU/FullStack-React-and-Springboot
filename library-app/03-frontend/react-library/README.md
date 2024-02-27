@@ -1,4 +1,4 @@
 Library app 
 technologies:
--react
--bootstrap
+- react
+- bootstrap
