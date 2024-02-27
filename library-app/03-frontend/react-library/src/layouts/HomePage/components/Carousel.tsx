@@ -68,12 +68,11 @@ export const Carousel = () => {
         {/* Desktop */}
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <ReturnBook book={books[0]}/>
             <div className="row d-flex justify-content-center align-items-center">
               {books.slice(0, 3).map((book) => (
                 <ReturnBook book={book} key={book.id} />
               ))}
-            R</div>
+            </div>
           </div>
           <div className="carousel-item">
             <div className="row d-flex justify-content-center align-items-center">
